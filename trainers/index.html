@@ -10,6 +10,9 @@
     <!-- all major BROWSERS use this tag for  SEO -->
     <meta name="description" content="Exclusive trainers sold at great prices limited edition stock" />
 
+    <!-- FONT.css -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/font.css" />
+
     <!-- Font awesome CDN for all our icons  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -21,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel|PT+Sans|Special+Elite" rel="stylesheet">
 
     <!-- Normalised CSS resets for browser compatibilty -->
-    <link rel="stylesheet" type="text/css" href="vendors/normalised.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalised.css" />
 
     <!-- Main CSS page link-->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
@@ -84,16 +87,17 @@
         <h1>Products</h1>
             <p class="caption">All the best and unique trainers collection at exclusive PRICES!</p>
 
-        <article>
+        <div id="allProducts">
+            <article>
             <figure>
             <img src="resources/featuredProducts/blackpuma.jpg" alt="Puma Suede Classic Trainers In Black" />
                 <figcaption>Puma Suede Classic Trainers In Black </figcaption>
                 <strong>£62.00</strong>
             </figure>
-            <button><a>Add to Cart</a></button>
-        </article>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+            </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/originaladidas.jpg" alt="Adidas Originals X_PLR Trainers In Grey" />
                 <figcaption>Adidas Originals X_PLR Trainers In Grey
@@ -101,56 +105,57 @@
                 </figcaption>
 
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/khakinike.jpg" alt="Nike Roshe Premium Trainers In Khaki" />
                 <figcaption>Nike Roshe Premium Trainers In Khaki <strong>£70.00</strong></figcaption>
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/lightgreylacoste.jpg" alt="Lacoste Spirit 317 Trainers In Light Grey And Pearl Co" />
                 <figcaption>Lacoste Spirit 317 Trainers In Light Grey And Pearl Co<strong>£77.00</strong></figcaption>
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/pullandbear.jpg" alt="Pull & Bear Trainers With Stripes In White" />
                 <figcaption>Pull & Bear Trainers With Stripes In White<strong>£27.99</strong></figcaption>
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/slipdenin.jpg" alt="ASOS Slip On Plimsolls In Denim With Splatter Print" />
                 <figcaption>ASOS Slip On Plimsolls In Denim With Splatter Print<strong>£50.00</strong></figcaption>
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/whiteadidas.jpg" alt="Adidas Originals EQT Support Advance Trainers In White" />
                 <figcaption>Adidas Originals EQT Support Advance Trainers In White<strong>£100.00</strong></figcaption>
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
 
-        <article>
+            <article>
             <figure>
             <img src="resources/featuredProducts/whiteconverse.jpg" alt="Converse All Star High Top White Trainer" />
                 <figcaption>Converse All Star High Top White Trainer<strong>£50.00</strong></figcaption>
             </figure>
-            <button><a>Add to Cart</a></button>
+            <button><a>Add to Cart </a><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
         </article>
+        </div>
 
     </section>
 
@@ -158,7 +163,7 @@
 
     <!-- ================================About Scetion   ========================================-->
 
-    <section>
+    <section class="about">
         <h1>ABOUT</h1>
             <p>A brief description of our company and all the services we offer.</p>
 
@@ -170,15 +175,31 @@
     <!-- ================================About Scetion  End========================================-->
 
     <!-- ================================Contact Scetion  ========================================-->
-    <section>
+    <section class="contact">
+
         <h1>CONTACT</h1>
         <p>Get in touch with us via our contact form, email or phone number.</p>
-        <h2>0208 488 3444</h2>
-        <button>Email us</button>
+    <h2><button><i class="fa fa-phone" aria-hidden="true"></i> 0208 488 3444</button>
+        <button><i class="fa fa-envelope" aria-hidden="true"></i> Email us</button></h2>
+   <!--     <span class="telMob">
+            <a href="tel:02084883444"><i class="fa fa-phone" aria-hidden="true"></i>0208 488 3444
+
+        </a> <br><br>
+        <a href="mailto:"><i class="fa fa-envelope" aria-hidden="true">
+            </i> Email us
+        </a>
+        </span> -->
 
         <address>Main office <br><br>Lumiere<br>2nd Floor<br>St.Clare House<br>30-33 Minories<br>London EC3N 1DD</address>
 
+       <div class="inputDtl">
+            Name <input id="inputName" type="text" placeholder="Name"/><br/>
 
+            Email <input type="Email"/ placeholder="Email"><br/>
+            <!--Message <textarea rows="4" cols="25" > -->
+           <textarea id="inputMsg" rows="4" cols="25">Message</textarea>
+            <input type="submit" value="Send Message"/>
+      </div>
 
     </section>
 
