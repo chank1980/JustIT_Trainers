@@ -59,6 +59,11 @@ a {
 }
 
 /* HOME SECTION */
+
+.myVideo {
+    display: none;
+}
+
 .homeBgImage {
     position: relative;
     background-image: url(/resources/img/trainerHomePage.jpg);
@@ -128,7 +133,7 @@ nav li a {
     text-align: right;
     border-top: 3px;
     text-transform: uppercase;
-    /*font-family: serif;*/
+    font-family: 'Mukta', sans-serif;
 
 }
 
@@ -147,7 +152,8 @@ nav li a {
     width: 10%; */
     display: block;
     text-align: right;
-    padding: 150px 5vw 0 0;
+   /* padding: 150px 5vw 0 0;*/
+    padding: 150px 9vw 0 50vw;
 
 
 
@@ -203,32 +209,43 @@ figure {
 
 figcaption{
     font-size: .9em;
-    padding: 0 25px;
+    /*padding: 0 25px;*/
     margin: 0 auto;
     text-align: center;
 }
 
-#allProducts article button {
-   /* color: rgb(255, 0, 0);*/
-    margin :10px 15vw 10px auto;
+.allProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.allProducts article button {
+
     display: block;
     padding: 15px 20px;
     border-radius: 5px 5px;
     border : 1px solid (255, 255, 255);
     background-color: rgb(53, 38, 80);
-
+    margin : 2vh auto 15vh auto;
 }
 
-#allProducts article button a {
+.allProducts article button a {
     color: rgb(255, 255, 255);
     font-family: arial, sans-serif;
 }
+
+
 
 article{
 
    /* text-align: center;*/
     /*width: 230px;*/
-    margin: 0 15%;
+    margin: 1%;
+    text-align: center;
+    width: 230px;
 }
 
 
@@ -279,6 +296,12 @@ article{
 
 }*/
 
+#map {
+    width: 100%;
+    height: 450px;
+
+}
+
 /**=============  Mobile Style 568px ==============================**/
 @media screen and (min-width:568px){
 
@@ -295,10 +318,15 @@ article{
     margin: 0 10vw 0 34vw;
 }
 
-#allProducts article button {
+/*.allProducts article button {
     margin :10px 20vw 10px auto;
-}
+}*/
 
+.figcaption {
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 70px;
+}
 
 
 
@@ -308,7 +336,7 @@ article{
 
 .slogan {
     font-size: 4em;
-    padding: 150px 5vw 0 0;
+    padding: 150px 50vw 0 60vw;
 
 }
 
@@ -334,23 +362,30 @@ h1 {
     font-size: 1.6em;
 }
 
-#allProducts article button {
-    margin :10px 18vw 10px auto;
+.allProducts article button {
+    margin-bottom: 0;
 
 
-    padding: 20px 25px;
+   /* padding: 20px 25px;
     border-radius: 5px 5px;
     border : 1px solid (255, 255, 255);
-    background-color: rgb(53, 38, 80);
+    background-color: rgb(53, 38, 80);*/
 }
-#allProducts article button a {
+/*.allProducts article button a {
     font-size: 2.0em;
-}
+}*/
 
 
-figcaption{
+/*figcaption{
     font-size: 1.8em;
+}*/
+
+.figcaption {
+    margin-bottom: 10px;
+    padding: 0;
+    height: 60px;
 }
+
 
 
 
@@ -368,6 +403,134 @@ figcaption{
     font-size: 1.5em;
 }
 
+.fa-shopping-cart {
+    font-size: 2.5em;
+     }
+
 
 
 /**=============  Mobile Style 1024px (Desktop) =====================**/
+     @media screen and (min-width:1024px)  {
+
+         .myVideo {
+             display: inline-block;
+             background-size: cover;
+             position: absolute;
+             top: 0;
+             right: 0;
+             z-index: -1000;
+             width: 100%;
+             height: auto;
+         }
+
+         .homeBgImage{
+
+             background-image: none;
+             background: -webkit-linear-gradient(rgba(0, 0, 0,0.48), rgba(0, 0, 0, .53));
+             overflow: hidden;
+
+         }
+
+         #navBtn, .basketIcon {
+             display: none;
+
+         }
+
+         .menu-items {
+             display: inline;
+         }
+
+         .logoC {
+        /*    position: absolute;*/
+            width: 100px;
+            top: 80px;
+            left: 20px;
+         }
+
+         .slogan {
+            font-size:  3.5em;
+            margin-left: 10%;
+}
+        .mainHeading {
+            padding-top: 100px;
+            font-size: 3.5em;
+            letter-spacing: 4px;
+            text-align: left;
+            margin: 1vw 30px;
+}
+
+    .newArrivalB {
+
+            font-size: 2.0em;
+            padding: 10px 10px;
+            margin: 20px 30px;
+}
+
+
+
+         /*============= Navigation ===================*/
+        .navC {
+            text-align: right;
+            border-bottom: none;
+         }
+
+         nav li a {
+             border-top: none;
+             font-size: 0.7em;
+             letter-spacing: 1px;
+            /* padding-right: 40px;*/
+             padding: 20px;
+
+         }
+
+         nav a:hover {
+             color: rgb(200, 177, 250);
+         }
+
+         .menu-items a {
+             display: inline;
+             text-align: center;
+         }
+
+         .menu-items li {
+             border-top: none;
+             display: inline;
+         }
+
+         .allProducts {
+             column-count: 4;
+
+
+         }
+
+
+}
+
+
+
+
+
+/**   new setting for input fields **/
+
+     .inputfields {
+         backgroung-color: transparent;
+         /*border: none;*/
+         border-radius: 3px;
+         border: 1px solid rgba(255,255,255,0.2);
+         background: -webkit-linear-gradient(left, rgba(25,25,25,0.9), rgba(25,25,25,0.5));
+         width: 98%;
+         outline:none;
+         margin: 10px 0 20px 0;
+         height: 30px;
+         color: white;
+         font-size: 1.2em;
+         font-weight: lighter;
+         padding: 0 5%;
+
+     }
+
+     .inputMessage {
+         border-radius: 3px;
+         border: 1px solid rgba(255,255,255,0.2);
+         background:
+     }
